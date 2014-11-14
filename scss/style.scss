@@ -30,7 +30,7 @@ html, body {
 @media (max-width: 1024px) {
   .left-panel {
     position: static;
-    min-height: 350px;
+    min-height: 500px;
     background-position: center center;
     width: 100%;
   }
@@ -46,7 +46,13 @@ html, body {
   }
 }
 @media (max-width: 768px) {
+  .left-panel {
+    // min-height: 0;
+    // height: 0;
+    // padding-bottom: 80%;
+    min-height: 400px;
+  }
   .container-fluid div.row div {
-    @include make-xs-column(12,50px);
+    @include make-xs-column(12, 50px);
   }
 }

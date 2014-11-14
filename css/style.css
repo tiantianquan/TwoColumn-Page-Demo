@@ -4683,7 +4683,7 @@ html, body {
 @media (max-width: 1024px) {
   .left-panel {
     position: static;
-    min-height: 350px;
+    min-height: 500px;
     background-position: center center;
     width: 100%; }
   .right-panel {
@@ -4691,6 +4691,8 @@ html, body {
     width: 100%; } }
 
 @media (max-width: 768px) {
+  .left-panel {
+    min-height: 400px; }
   .container-fluid div.row div {
     position: relative;
     float: left;
