@@ -1,0 +1,52 @@
+@import"bourbon";
+@import"neat";
+@import"bootstrap";
+* {
+  font-family: Roboto, sans-serif;
+}
+html, body {
+  height: 100%;
+}
+.my-panel {
+  min-height: 100%;
+}
+.left-panel {
+  position: fixed;
+  background-color: #999;
+  width: 50%;
+  background-image: url("/img/first-img.jpg");
+  background-size: cover;
+  background-position: center 0;
+}
+.right-panel {
+  padding-top: 40px;
+  margin-left: 50%;
+  width: 50%;
+  // background-color: lighten(black, 90%);
+  .container-fluid {
+    line-height: 2em;
+  }
+}
+@media (max-width: 1024px) {
+  .left-panel {
+    position: static;
+    min-height: 350px;
+    background-position: center center;
+    width: 100%;
+  }
+  .right-panel {
+    margin-left: 0;
+    width: 100%;
+    .container-fluid div.row div {
+      // @include make-sm-column(8, $grid-gutter-width);
+      // @include make-sm-column-offset(2);
+      // @include make-xs-column(10, $grid-gutter-width/2);
+      // @include make-xs-column-offset(1);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container-fluid div.row div {
+    @include make-xs-column(12,50px);
+  }
+}
